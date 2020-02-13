@@ -1,0 +1,22 @@
+
+<html>
+
+<head>
+    <title>Today's Date.</title>
+</head>
+
+<body>
+    <button type="button" onclick="todaysdate()"><h1>Click here to know today's date.</h1></button>
+    <script>
+    function todaysdate(){
+        let d= new Date();
+        let month= d.getMonth()+1; //this is done because here the 0 value is counted as January
+        let day=d.getDate();
+        let year=d.getFullYear();
+        document.write(+ month +"-" + day +"-" + year);
+    }
+    
+    // Here we have considered this code into a function in order to call it in the html file under the keyword of 'button'.</script>
+</body>
+
+</html>
