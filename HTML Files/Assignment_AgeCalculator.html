@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Age Calculator.</title>
+    </head>
+    <body>
+        <script>
+            alert("Enter your DoB: ");
+            let day=prompt("Day: ");
+            let month=prompt("Month: ");
+            let year=prompt("Year: ");
+
+            let d= new Date();
+            let todaymonth= d.getMonth()+1; 
+            let todayday=d.getDate();
+            let todayyear=d.getFullYear();
+
+            alert("You are " +(todayyear-year) +" years old.");
+        </script>
+        
+    </body>
+</html>

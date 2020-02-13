@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Length unit converter.</title>
+        <h1>Length Conversion</h1>
+    </head>
+
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="kmtoothers();">Kilometer to others</button>
+            <button class="tablinks" onclick="mtoothers();">Meters to others</button>
+            <button class="tablinks" onclick="mmtoothers();">Millimeters to others</button>
+        </div>
+        
+
+        <script>
+            function kmtoothers(){
+                let converter=prompt("Enter the value in Kilometers");
+                let meters=converter*1000;
+                let millim=converter*1000000;
+                alert("The value of " + converter +"kms in meters is " + meters +"m and in millimeters is " + millim +"mm.");
+            }
+            
+            function mtoothers(){
+                let converter=prompt("Enter the value in meters");
+                let kilometers=converter/1000;
+                let millim=converter*1000;
+                alert("The value of " + converter +"m in Kilometers is " + kilometers +"km and in millimeters is " + millim +"mm.");
+
+            }
+            function mmtoothers(){
+                let converter=prompt("Enter the value in millimeters");
+                let meters=converter/1000;
+                let kilometers=converter/1000000;
+                alert("The value of " + converter +"mm in meters is " + meters +"m and in kilometers is " + kilometers +"km.");
+
+            }
+        </script>
+    </body>
+</html>
